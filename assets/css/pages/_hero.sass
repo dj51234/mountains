@@ -1,0 +1,100 @@
+#hero
+	background: url(../img/headerbg.jpg) no-repeat center center
+	background-size: cover
+	height: 690px
+
+	.header
+		display: flex
+		justify-content: space-around
+		align-items: center
+		padding: 30px 0
+		background-color: transparentize(white, .7)
+
+		.logo
+			font-family: 'Oleo Script'
+			color: #95a5ad
+			font-size: 26px
+
+			span
+				color: $blue
+
+		a
+			color: $blue
+			text-transform: uppercase
+			letter-spacing: 2px
+			text-decoration: none
+			font-weight: 600
+
+			span
+				padding: 15px 40px
+				border-radius: 3px
+				border: 3px solid $blue
+
+			&:hover span
+				color: white
+				background-color: $blue
+
+		nav
+			a
+				margin-right: 35px
+				text-decoration: none
+				color: $grey
+				font-weight: 700
+				font-size: 12px
+				letter-spacing: 0
+				padding-bottom: 5px
+
+				&:hover
+					border-bottom: 2px solid $blue
+
+	.hero-title
+		max-width: 550px
+		margin: 100px  0 0 50px
+		text-transform: uppercase
+		color: white
+		text-shadow: 0 0 59px rgba(0,0,0,0.35)
+		border: 2px solid white
+		padding: 50px 600px 80px 60px
+
+		.main-title
+
+
+			h1
+				letter-spacing: 3px
+				font-size: 50px
+				position: relative
+				margin-bottom: 50px
+
+				span
+					color: $blue
+					font-family: 'Oleo Script'
+					display: inline-block
+					position: absolute
+					top: 35px
+					left: 0
+					font-size: 45px
+
+		p
+			line-height: 29px
+			text-transform: none
+			max-width: 490px
+			margin-bottom: 50px
+
+		a
+			color: white
+			text-transform: uppercase
+			letter-spacing: 2px
+			text-decoration: none
+			font-weight: 600
+			font-size: 14px
+
+
+			span
+				padding: 20px 60px
+				background-color: $blue
+				border-radius: 3px
+				border: 3px solid transparent
+
+			&:hover span
+				background: none
+				border: 3px solid $blue
