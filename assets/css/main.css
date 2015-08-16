@@ -409,24 +409,26 @@ body {
       #hero .header nav a:hover {
         border-bottom: 2px solid #56c7ff; }
   #hero .hero-title {
-    max-width: 550px;
-    margin: 100px 0 0 50px;
+    max-width: 1060px;
+    height: 300px;
+    margin: 100px 20px 0 150px;
     text-transform: uppercase;
     color: white;
     text-shadow: 0 0 59px rgba(0, 0, 0, 0.35);
     border: 2px solid white;
-    padding: 50px 600px 80px 60px; }
+    padding: 15px 200px 25px 25px; }
     #hero .hero-title .main-title h1 {
       letter-spacing: 3px;
       font-size: 50px;
       position: relative;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      max-width: 550px; }
       #hero .hero-title .main-title h1 span {
         color: #56c7ff;
         font-family: 'Oleo Script';
         display: inline-block;
         position: absolute;
-        top: 35px;
+        top: 45px;
         left: 0;
         font-size: 45px; }
     #hero .hero-title p {
@@ -437,15 +439,218 @@ body {
     #hero .hero-title a {
       color: white;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 14px; }
+      font-weight: 700;
+      font-size: 12px; }
       #hero .hero-title a span {
-        padding: 20px 60px;
+        padding: 20px 40px;
         background-color: #56c7ff;
         border-radius: 3px;
         border: 3px solid transparent; }
       #hero .hero-title a:hover span {
         background: none;
         border: 3px solid #56c7ff; }
+
+#about {
+  background: url(../img/mapdots.png);
+  height: 500px;
+  background-size: 150%;
+  position: relative; }
+  #about .squiggly-line {
+    font-size: 0;
+    margin-top: 150px;
+    margin-left: 150px; }
+    #about .squiggly-line span {
+      height: 7px;
+      width: 7px;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border-top: 1px solid #95a5ad;
+      border-left: 1px solid grey;
+      margin-right: 3px; }
+  #about .about-title {
+    max-width: 540px;
+    float: left;
+    margin-left: 150px; }
+    #about .about-title * {
+      margin-top: 50px; }
+    #about .about-title h3 {
+      text-transform: uppercase;
+      color: #333;
+      letter-spacing: 3px; }
+    #about .about-title p {
+      line-height: 29px;
+      max-width: 400px;
+      color: #666; }
+    #about .about-title a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 700; }
+      #about .about-title a span {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #56c7ff;
+        border-radius: 3px; }
+  #about .image-div {
+    float: right; }
+    #about .image-div .top-img {
+      background: url(../img/blog1.png) no-repeat;
+      background-size: contain;
+      width: 540px;
+      height: 300px;
+      position: absolute;
+      top: 70px;
+      right: 270px;
+      z-index: 1; }
+    #about .image-div .bottom-img {
+      background: url(../img/blog2.png) no-repeat;
+      background-size: contain;
+      width: 600px;
+      height: 424px;
+      position: absolute;
+      top: -170px;
+      right: 150px; }
+
+#journal {
+  text-align: center; }
+  #journal .squiggly-line {
+    font-size: 0;
+    margin-top: 100px; }
+    #journal .squiggly-line span {
+      height: 7px;
+      width: 7px;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border-top: 1px solid #95a5ad;
+      border-left: 1px solid grey;
+      margin-right: 3px; }
+  #journal h1 {
+    color: #333;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600; }
+  #journal .journal-container {
+    max-width: 1140px;
+    margin: 100px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.13); }
+    #journal .journal-container div {
+      height: 380px;
+      width: 380px;
+      position: relative; }
+      #journal .journal-container div:nth-child(1) {
+        background: url(../img/journal1.png);
+        background-size: cover; }
+      #journal .journal-container div:nth-child(3) {
+        background: url(../img/journal2.png);
+        background-size: cover; }
+      #journal .journal-container div:nth-child(5) {
+        background: url(../img/journal3.png);
+        background-size: cover; }
+      #journal .journal-container div:nth-child(even) {
+        letter-spacing: 2px; }
+        #journal .journal-container div:nth-child(even) * {
+          margin-bottom: 40px; }
+        #journal .journal-container div:nth-child(even) h6 {
+          margin-top: 20px;
+          color: #56c7ff;
+          text-transform: uppercase; }
+        #journal .journal-container div:nth-child(even) h4 {
+          font-size: 13px;
+          color: #222;
+          font-weight: 400;
+          letter-spacing: 0; }
+        #journal .journal-container div:nth-child(even) h3 {
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #333;
+          padding: 0 10px; }
+        #journal .journal-container div:nth-child(even) p {
+          line-height: 24px;
+          font-size: 12px;
+          color: #666;
+          padding: 0 10px; }
+        #journal .journal-container div:nth-child(even):nth-child(2) span {
+          height: 15px;
+          width: 15px;
+          background-color: #fff;
+          position: absolute;
+          top: 15%;
+          left: -8px;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        #journal .journal-container div:nth-child(even):nth-child(4) span {
+          height: 15px;
+          width: 15px;
+          background-color: #fff;
+          position: absolute;
+          top: 15%;
+          right: -8px;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          z-index: 1; }
+        #journal .journal-container div:nth-child(even):nth-child(6) span {
+          height: 15px;
+          width: 15px;
+          background-color: #fff;
+          position: absolute;
+          top: -8px;
+          left: 15%;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          z-index: 1; }
+      #journal .journal-container div .icon2 {
+        display: block;
+        background: url(../img/icon1.png);
+        background-size: contain;
+        width: 59px;
+        height: 74px;
+        margin-right: -29px;
+        margin-top: -37px;
+        position: absolute;
+        top: 50%;
+        right: 50%; }
+      #journal .journal-container div .icon3 {
+        display: block;
+        background: url(../img/icon2.png);
+        background-size: contain;
+        width: 65px;
+        height: 65px;
+        margin-right: -32px;
+        margin-top: -32px;
+        position: absolute;
+        top: 50%;
+        right: 50%; }
+      #journal .journal-container div .icon1 {
+        display: block;
+        background: url(../img/icon3.png);
+        background-size: contain;
+        width: 81px;
+        height: 81px;
+        margin-right: -40.5px;
+        margin-top: -40.5px;
+        position: absolute;
+        top: 50%;
+        right: 50%; }

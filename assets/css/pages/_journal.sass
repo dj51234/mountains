@@ -1,0 +1,134 @@
+#journal
+   text-align: center
+
+   .squiggly-line
+      font-size: 0
+      margin-top: 100px
+
+      span
+         +size(7px)
+         display: inline-block
+         margin: 0
+         padding: 0
+         transform: rotate(45deg)
+         border-top: 1px solid $grey
+         border-left: 1px solid grey
+         margin-right: 3px
+
+   h1
+      color: #333
+      margin-top: 25px
+      text-transform: uppercase
+      letter-spacing: 2px
+      font-weight: 600
+
+   .journal-container
+      max-width: 1140px
+      margin: 100px auto
+      display: flex
+      flex-wrap: wrap
+      box-shadow: 0 0 21px rgba(0,0,0,0.13)
+
+      div
+         +size(380px)
+         position: relative
+
+         &:nth-child(1)
+            background: url(../img/journal1.png)
+            background-size: cover
+
+         &:nth-child(3)
+            background: url(../img/journal2.png)
+            background-size: cover
+
+         &:nth-child(5)
+            background: url(../img/journal3.png)
+            background-size: cover
+
+         &:nth-child(even)
+
+            letter-spacing: 2px
+            *
+               margin-bottom: 40px
+
+            h6
+               margin-top: 20px
+               color: $blue
+               text-transform: uppercase
+
+            h4
+               font-size: 13px
+               color: #222
+               font-weight: 400
+               letter-spacing: 0
+
+
+            h3
+               font-weight: 600
+               text-transform: uppercase
+               color: #333
+               padding: 0 10px
+
+
+            p
+               line-height: 24px
+               font-size: 12px
+               color: #666
+               padding: 0 10px
+
+            &:nth-child(2)
+
+               span
+                  +size(15px)
+                  background-color: #fff
+                  +position(absolute, 15% null null  -8px)
+                  transform: rotate(45deg)
+
+            &:nth-child(4)
+
+               span
+                  +size(15px)
+                  background-color: #fff
+                  +position(absolute, 15% -8px null null)
+                  transform: rotate(45deg)
+                  z-index: 1
+
+            &:nth-child(6)
+
+               span
+                  +size(15px)
+                  background-color: #fff
+                  +position(absolute, -8px null null 15%)
+                  transform: rotate(45deg)
+                  z-index: 1
+
+         .icon2
+            display: block
+            background: url(../img/icon1.png)
+            background-size: contain
+            width: 59px
+            height: 74px
+            margin-right: -29px
+            margin-top: -37px
+            +position(absolute, 50% 50% null null)
+
+         .icon3
+            
+            display: block
+            background: url(../img/icon2.png)
+            background-size: contain
+            width: 65px
+            height: 65px
+            margin-right: -32px
+            margin-top: -32px
+            +position(absolute, 50% 50% null null)
+
+         .icon1
+            display: block
+            background: url(../img/icon3.png)
+            background-size: contain
+            width: 81px
+            height: 81px
+            margin-right: -40.5px
+            margin-top: -40.5px
+            +position(absolute, 50% 50% null null)
